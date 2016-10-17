@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../frameworks/angular-1.4.0/angular.min.js"></script>
+    <script>
+        angular.module("app",[]).controller("oneCtrl",function ($scope) {
+            $scope.change = function () {
+                alert(1);
+            }
+        });
+    </script>
+</head>
+<body ng-controller="oneCtrl">
+    <input type="radio" name="1" ng-model="id"  ng-change="change()">A
+    <input type="radio" name="1" ng-model="id"  ng-change="change()">B
+    <input type="radio" name="1" ng-model="id"  ng-change="change()">C
+    <input type="radio" name="1" ng-model="id"  ng-change="change()">D
+{{id}}
+</body>
+</html>
